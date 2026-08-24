@@ -41,8 +41,8 @@ export const links = () => {
 
 export const meta = () => {
   return baseMeta({
-    title: 'Designer + Developer',
-    description: `Design portfolio of ${config.name} — a product designer working on web & mobile apps with a focus on motion, experience design, and accessibility.`,
+    title: 'Music Label',
+    description: `${config.name} is an independent music label offering distribution, publishing, and artist services to help musicians release and grow their music.`,
   });
 };
 
@@ -103,13 +103,13 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Designing the future of education"
-        description="Designing a platform to help educators build better online courseware"
-        buttonText="View project"
-        buttonLink="/projects/smart-sparrow"
+        title="Get your music everywhere"
+        description="Distribute your releases to Spotify, Apple Music, TikTok, and every major streaming platform, with fast turnaround and no hidden fees"
+        buttonText="View distribution plans"
+        buttonLink="/contact"
         model={{
           type: 'laptop',
-          alt: 'Smart Sparrow lesson builder',
+          alt: 'Distribution dashboard showing release status across streaming platforms',
           textures: [
             {
               srcSet: `${sprTexture} 1280w, ${sprTextureLarge} 2560w`,
@@ -124,13 +124,13 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Video game progress tracking"
-        description="Design and development for a video game tracking app built in React Native"
-        buttonText="View website"
-        buttonLink="https://gamestack.hamishw.com"
+        title="Grow your streams and playlists"
+        description="Playlist pitching, release marketing, and audience growth support for every artist on our roster"
+        buttonText="View artist services"
+        buttonLink="/contact"
         model={{
           type: 'phone',
-          alt: 'App login screen',
+          alt: 'Mobile app showing streaming and playlist analytics',
           textures: [
             {
               srcSet: `${gamestackTexture} 375w, ${gamestackTextureLarge} 750w`,
@@ -148,13 +148,13 @@ export const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="Biomedical image collaboration"
-        description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
-        buttonText="View project"
-        buttonLink="/projects/slice"
+        title="Protect and collect your royalties"
+        description="Publishing administration and royalty collection so you get paid for every stream, sync, and cover of your music"
+        buttonText="View publishing services"
+        buttonLink="/contact"
         model={{
           type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
+          alt: 'Royalty and publishing earnings dashboard',
           textures: [
             {
               srcSet: `${sliceTexture} 800w, ${sliceTextureLarge} 1920w`,
