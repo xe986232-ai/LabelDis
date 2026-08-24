@@ -14,42 +14,20 @@
 
 .row {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: var(--spaceXXL);
-
-  @media (--mediaTablet) {
-    gap: var(--spaceXL);
-  }
-
-  @media (--mediaMobile) {
-    gap: var(--spaceL);
-  }
 }
 
-.icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  color: #fff;
-  flex-shrink: 0;
-
-  @media (--mediaTablet) {
-    width: 36px;
-    height: 36px;
-  }
-
-  @media (--mediaMobile) {
-    width: 32px;
-    height: 32px;
-  }
-}
-
-.icon svg {
+.logos {
   width: 100%;
-  height: 100%;
-  display: block;
+  max-width: 420px;
+  height: auto;
+
+  @media (--mediaTablet) {
+    max-width: 320px;
+  }
+
+  @media (--mediaMobile) {
+    max-width: 260px;
+  }
 }

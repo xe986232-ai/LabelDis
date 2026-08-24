@@ -1,13 +1,7 @@
 import { Heading } from '~/components/heading';
 import { Section } from '~/components/section';
-import { platforms } from './platforms';
+import platformsRow from '~/assets/platforms-row.svg';
 import styles from './platform-marquee.module.css';
-
-// NOTE: `platforms.jsx` ships with simplified, stylised glyphs so this
-// component works without any external assets. For production, swap each
-// `icon` for the platform's official brand-kit SVG/PNG — most services
-// (Spotify, Apple, Amazon, YouTube, etc.) publish a press/brand page with
-// logo downloads and usage guidelines you'll want to follow.
 
 export const PlatformMarquee = ({ id, className, ...rest }) => {
   return (
@@ -16,11 +10,11 @@ export const PlatformMarquee = ({ id, className, ...rest }) => {
         Distributed everywhere your fans stream
       </Heading>
       <div className={styles.row}>
-        {platforms.map(platform => (
-          <span className={styles.icon} key={platform.name} title={platform.name}>
-            {platform.icon}
-          </span>
-        ))}
+        <img
+          src={platformsRow}
+          alt="Spotify, Apple Music, Amazon Music, YouTube"
+          className={styles.logos}
+        />
       </div>
     </Section>
   );
