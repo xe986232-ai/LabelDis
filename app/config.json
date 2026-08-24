@@ -1,7 +1,7 @@
 {
-  "name": "WTM (West Tenggara Music)",
+  "name": "West Tenggara Music",
   "role": "Music Label",
-  "disciplines": ["Distribution", "Publishing", "Artist Management", "Sync Licensing"],
+  "disciplines": ["Publishing", "Distribution"],
   "url": "https://hamishw.com",
   "bluesky": "hamishw.com",
   "figma": "@Hamish",
