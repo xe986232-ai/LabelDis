@@ -7,6 +7,8 @@ import { baseMeta } from '~/utils/meta';
 import { Intro } from './intro';
 import { Profile } from './profile';
 import { ProjectSummary } from './project-summary';
+import { PublisherCatalog } from './publisher-catalog';
+import { WhyChooseUs } from './why-choose-us';
 import { useEffect, useRef, useState } from 'react';
 import config from '~/config.json';
 import styles from './home.module.css';
@@ -127,6 +129,8 @@ export const Home = () => {
         buttonText="View publishing services"
         buttonLink="/contact"
       />
+      <PublisherCatalog id="publishers" />
+      <WhyChooseUs id="why-choose-us" />
       <Profile
         sectionRef={details}
         visible={visibleSections.includes(details.current)}

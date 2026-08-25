@@ -1,0 +1,23 @@
+.catalog {
+  padding-top: var(--space4XL);
+  padding-bottom: var(--space4XL);
+
+  @media (--mediaTablet) {
+    padding-top: var(--space3XL);
+    padding-bottom: var(--space3XL);
+  }
+}
+
+.content {
+  max-width: var(--maxWidthM);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: var(--spaceL);
+}
+
+.description {
+  color: var(--textLight);
+}

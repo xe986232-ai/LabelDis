@@ -1,0 +1,62 @@
+.whyUs {
+  padding-top: var(--space4XL);
+  padding-bottom: var(--space4XL);
+
+  @media (--mediaTablet) {
+    padding-top: var(--space3XL);
+    padding-bottom: var(--space3XL);
+  }
+}
+
+.title {
+  max-width: var(--maxWidthM);
+  margin: 0 auto var(--space3XL);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spaceL);
+  max-width: var(--maxWidthL);
+  margin: 0 auto;
+
+  @media (--mediaLaptop) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (--mediaMobile) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  position: relative;
+  padding: var(--spaceXL);
+  border-radius: 16px;
+  background: var(--backgroundLight);
+  border: 1px solid color-mix(in lab, var(--text) 10%, transparent);
+  transition: background var(--durationM) ease, transform var(--durationM) ease;
+
+  &:hover {
+    background: color-mix(in lab, var(--backgroundLight) 90%, var(--text) 5%);
+    transform: translateY(-4px);
+  }
+}
+
+.number {
+  display: block;
+  font-family: var(--monoFontStack);
+  font-size: var(--fontSizeH4);
+  font-weight: var(--fontWeightMedium);
+  color: var(--accent);
+  opacity: 0.6;
+  margin-bottom: var(--spaceM);
+}
+
+.cardTitle {
+  margin-bottom: var(--spaceS);
+}
+
+.cardDescription {
+  color: var(--textLight);
+}
