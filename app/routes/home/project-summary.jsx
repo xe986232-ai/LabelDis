@@ -74,6 +74,7 @@ export function ProjectSummary({
       className={styles.summary}
       data-alternate={alternate}
       data-first={index === 1}
+      data-no-image={!image}
       onFocus={() => setFocused(true)}
       onBlur={() => setFocused(false)}
       as="section"
@@ -83,17 +84,18 @@ export function ProjectSummary({
       tabIndex={-1}
       {...rest}
     >
-      <div className={styles.content}>
+      <div className={styles.content} data-no-image={!image}>
         <Transition in={sectionVisible || focused}>
           {({ visible }) => (
             <>
-              {!alternate && !isMobile && (
+              {!image && renderDetails(visible)}
+              {image && !alternate && !isMobile && (
                 <>
                   {renderDetails(visible)}
                   {renderPreview(visible)}
                 </>
               )}
-              {(alternate || isMobile) && (
+              {image && (alternate || isMobile) && (
                 <>
                   {renderPreview(visible)}
                   {renderDetails(visible)}

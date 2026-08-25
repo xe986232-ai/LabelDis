@@ -1,9 +1,3 @@
-import gamestackTextureLarge from '~/assets/gamestack-login-large.jpg';
-import gamestackTexturePlaceholder from '~/assets/gamestack-login-placeholder.jpg';
-import gamestackTexture from '~/assets/gamestack-login.jpg';
-import sliceTextureLarge from '~/assets/slice-app-large.jpg';
-import sliceTexturePlaceholder from '~/assets/slice-app-placeholder.jpg';
-import sliceTexture from '~/assets/slice-app.jpg';
 import sprTextureLarge from '~/assets/spr-lesson-builder-dark-large.jpg';
 import sprTexturePlaceholder from '~/assets/spr-lesson-builder-dark-placeholder.jpg';
 import sprTexture from '~/assets/spr-lesson-builder-dark.jpg';
@@ -122,11 +116,6 @@ export const Home = () => {
         description="Playlist pitching, release marketing, and audience growth support for every artist on our roster"
         buttonText="View artist services"
         buttonLink="/contact"
-        image={{
-          alt: 'Mobile app showing streaming and playlist analytics',
-          srcSet: `${gamestackTexture} 375w, ${gamestackTextureLarge} 750w`,
-          placeholder: gamestackTexturePlaceholder,
-        }}
       />
       <ProjectSummary
         id="project-3"
@@ -137,11 +126,6 @@ export const Home = () => {
         description="Publishing administration and royalty collection so you get paid for every stream, sync, and cover of your music"
         buttonText="View publishing services"
         buttonLink="/contact"
-        image={{
-          alt: 'Royalty and publishing earnings dashboard',
-          srcSet: `${sliceTexture} 800w, ${sliceTextureLarge} 1920w`,
-          placeholder: sliceTexturePlaceholder,
-        }}
       />
       <Profile
         sectionRef={details}
