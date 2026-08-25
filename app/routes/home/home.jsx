@@ -112,9 +112,9 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Grow your streams and playlists"
-        description="Playlist pitching, release marketing, and audience growth support for every artist on our roster"
-        buttonText="View artist services"
+        title="Trending Song & Artist"
+        description="See which tracks and artists are heating up right now, from viral remixes to breakout releases climbing the charts across every platform"
+        buttonText="Explore trending now"
         buttonLink="/contact"
       />
       <ProjectSummary
