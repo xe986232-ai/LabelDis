@@ -85,107 +85,42 @@
   width: 100%;
 }
 
-.model {
-  --width: 180%;
-  --aspectRatio: 12 / 10;
+.image {
+  --width: 100%;
 
-  min-width: var(--width);
-  aspect-ratio: var(--aspectRatio);
-  display: grid;
+  width: var(--width);
+  border-radius: 12px;
+  overflow: hidden;
   position: relative;
+  box-shadow: 0 30px 60px -20px rgb(0 0 0 / 0.4);
 
-  &[data-device='laptop'] {
-    top: 6%;
-    left: 14%;
-
-    @media (--mediaDesktop) {
-      --width: 180%;
-    }
-
-    @media (--mediaTablet) {
-      --width: 140%;
-
-      top: 10%;
-      left: 0;
-    }
-  }
-
-  &[data-device='phone'] {
-    --width: 116%;
-    --aspectRatio: 7 / 10;
-
-    top: 5%;
-    left: -10%;
-
-    @media (--mediaDesktop) {
-      --width: 108%;
-
-      left: 0;
-    }
-
-    @media (--mediaTablet) {
-      --width: 108%;
-
-      left: 0;
-      max-height: 60vh;
-    }
-
-    @media (--mediaMobile) {
-      --width: 108%;
-
-      left: 0;
-      max-height: none;
-    }
-  }
-}
-
-.loader {
-  opacity: 0;
-  transition: opacity 400ms ease 1000ms;
-
-  &[data-visible='true'] {
-    opacity: 1;
+  @media (--mediaTablet) {
+    --width: 90%;
   }
 }
 
 .svg {
+  position: absolute;
+  width: 100%;
+  right: -20%;
+  bottom: 16%;
   opacity: 0;
   transition: opacity 1200ms ease 1400ms;
   fill: var(--textTitle);
+  transform: translateY(50%);
 
   &[data-visible='true'] {
     opacity: var(--opacity);
   }
 
-  &[data-device='laptop'] {
-    position: absolute;
-    width: 100%;
-    right: -36%;
-    bottom: 24%;
-    transform: translateY(50%);
-
-    @media (--mediaTablet) {
-      width: 80%;
-      right: -10%;
-      bottom: 18%;
-    }
-
-    @media (--mediaMobile) {
-      right: 0;
-    }
+  @media (--mediaTablet) {
+    width: 80%;
+    right: -6%;
+    bottom: 12%;
   }
 
-  &[data-device='phone'] {
-    position: absolute;
-    bottom: 23%;
-    transform: translateY(50%);
-    width: 100%;
-    transition-delay: 800ms;
-
-    @media (--mediaTablet) {
-      width: 80%;
-      bottom: 23%;
-    }
+  @media (--mediaMobile) {
+    right: 0;
   }
 }
 

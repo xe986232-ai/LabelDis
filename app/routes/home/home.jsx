@@ -1,6 +1,3 @@
-import gamestackTexture2Large from '~/assets/gamestack-list-large.jpg';
-import gamestackTexture2Placeholder from '~/assets/gamestack-list-placeholder.jpg';
-import gamestackTexture2 from '~/assets/gamestack-list.jpg';
 import gamestackTextureLarge from '~/assets/gamestack-login-large.jpg';
 import gamestackTexturePlaceholder from '~/assets/gamestack-login-placeholder.jpg';
 import gamestackTexture from '~/assets/gamestack-login.jpg';
@@ -109,15 +106,10 @@ export const Home = () => {
         description="Distribute your releases to Spotify, Apple Music, TikTok, and every major streaming platform, with fast turnaround and no hidden fees"
         buttonText="View distribution plans"
         buttonLink="/contact"
-        model={{
-          type: 'laptop',
+        image={{
           alt: 'Distribution dashboard showing release status across streaming platforms',
-          textures: [
-            {
-              srcSet: `${sprTexture} 1280w, ${sprTextureLarge} 2560w`,
-              placeholder: sprTexturePlaceholder,
-            },
-          ],
+          srcSet: `${sprTexture} 1280w, ${sprTextureLarge} 2560w`,
+          placeholder: sprTexturePlaceholder,
         }}
       />
       <ProjectSummary
@@ -130,19 +122,10 @@ export const Home = () => {
         description="Playlist pitching, release marketing, and audience growth support for every artist on our roster"
         buttonText="View artist services"
         buttonLink="/contact"
-        model={{
-          type: 'phone',
+        image={{
           alt: 'Mobile app showing streaming and playlist analytics',
-          textures: [
-            {
-              srcSet: `${gamestackTexture} 375w, ${gamestackTextureLarge} 750w`,
-              placeholder: gamestackTexturePlaceholder,
-            },
-            {
-              srcSet: `${gamestackTexture2} 375w, ${gamestackTexture2Large} 750w`,
-              placeholder: gamestackTexture2Placeholder,
-            },
-          ],
+          srcSet: `${gamestackTexture} 375w, ${gamestackTextureLarge} 750w`,
+          placeholder: gamestackTexturePlaceholder,
         }}
       />
       <ProjectSummary
@@ -154,15 +137,10 @@ export const Home = () => {
         description="Publishing administration and royalty collection so you get paid for every stream, sync, and cover of your music"
         buttonText="View publishing services"
         buttonLink="/contact"
-        model={{
-          type: 'laptop',
+        image={{
           alt: 'Royalty and publishing earnings dashboard',
-          textures: [
-            {
-              srcSet: `${sliceTexture} 800w, ${sliceTextureLarge} 1920w`,
-              placeholder: sliceTexturePlaceholder,
-            },
-          ],
+          srcSet: `${sliceTexture} 800w, ${sliceTextureLarge} 1920w`,
+          placeholder: sliceTexturePlaceholder,
         }}
       />
       <Profile
