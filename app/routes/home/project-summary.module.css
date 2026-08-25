@@ -24,10 +24,10 @@
   }
 
   &[data-first='true'] {
-    margin-top: 0;
+    margin-top: var(--space3XL);
 
     @media (--mediaTablet) {
-      margin-top: 0;
+      margin-top: var(--space2XL);
     }
   }
 }
@@ -96,61 +96,6 @@
 
   @media (--mediaTablet) {
     --width: 90%;
-  }
-}
-
-.svg {
-  position: absolute;
-  width: 100%;
-  right: -20%;
-  bottom: 16%;
-  opacity: 0;
-  transition: opacity 1200ms ease 1400ms;
-  fill: var(--textTitle);
-  transform: translateY(50%);
-
-  &[data-visible='true'] {
-    opacity: var(--opacity);
-  }
-
-  @media (--mediaTablet) {
-    width: 80%;
-    right: -6%;
-    bottom: 12%;
-  }
-
-  @media (--mediaMobile) {
-    right: 0;
-  }
-}
-
-.index {
-  position: relative;
-  display: grid;
-  grid-template-columns: 90px 1fr;
-  gap: var(--spaceM);
-  align-items: center;
-  margin-bottom: var(--spaceXL);
-}
-
-.indexNumber {
-  font-size: var(--fontSizeBodyS);
-  font-weight: var(--fontWeightMedium);
-  color: var(--primary);
-  opacity: 0;
-  transition-property: opacity;
-  transition-timing-function: var(--bezierFastoutSlowin);
-  transition-duration: var(--durationM);
-  transition-delay: 1.3s;
-
-  @media (--mediaUseMotion) {
-    transition-property: transform, opacity;
-    transform: translateX(calc(var(--spaceM) * -1));
-  }
-
-  &[data-visible='true'] {
-    transform: translateX(0);
-    opacity: 1;
   }
 }
 
